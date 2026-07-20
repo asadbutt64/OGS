@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Dark rounded square background -->
+  <rect width="48" height="48" rx="10" fill="#0d1f1a"/>
+  <!-- OGS letters -->
+  <text
+    x="50%"
+    y="54%"
+    dominant-baseline="middle"
+    text-anchor="middle"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-weight="800"
+    font-size="16"
+    letter-spacing="0.5"
+    fill="#3ddc84"
+  >OGS</text>
+</svg>

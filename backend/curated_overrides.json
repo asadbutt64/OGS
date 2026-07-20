@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "checksum": "abc123check",
+  "overrides": {
+    "TNFRSF11B": {
+      "Thyroid": 120.0,
+      "Blood Vessel - Aorta": 85.0,
+      "Lung": 15.0
+    }
+  }
+}

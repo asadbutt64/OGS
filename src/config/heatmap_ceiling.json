@@ -1,0 +1,7 @@
+{
+  "version": "gtex_v8",
+  "percentile": 95,
+  "max_nTPM": 1109.5255,
+  "computed_at": "2026-07-11T00:39:23.077072Z",
+  "note": "Recomputed on each deploy from GTEx v8 dataset. Do not edit manually \u2013 re-run scripts/compute_ceiling.py to update."
+}

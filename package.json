@@ -1,0 +1,109 @@
+{
+  "name": "omnigene-studio",
+  "version": "1.0.0",
+  "description": "Macroscopic Spatial & Pathway Analytical Software",
+  "main": "main/index.js",
+  "scripts": {
+    "dev:frontend": "vite",
+    "dev:electron": "electron . --devtools",
+    "dev:backend": "python backend/app.py",
+    "dev": "concurrently -n \"frontend,electron\" -c \"blue,magenta\" \"npm run dev:frontend\" \"npm run dev:electron\"",
+
+    "build:frontend": "tsc && vite build",
+
+    "build:backend": "pyinstaller --clean --distpath dist-backend backend_server.spec",
+
+    "dist:win": "npm run build:frontend && npm run build:backend && electron-builder --win nsis",
+
+    "package": "electron-packager . OmniGeneStudio --platform=win32 --arch=x64 --out=dist-package --overwrite --ignore=\"(backend/\\\\.venv|backend/build|src|tsconfig|vite\\\\.config|tailwind\\\\.config|postcss\\\\.config|\\\\.git|\\\\.agents|\\\\.vscode)\""
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^0.395.0",
+    "plotly.js-dist-min": "^2.32.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.6.0",
+    "reactflow": "^11.10.4",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.11"
+  },
+  "build": {
+    "appId": "com.omnigene.studio",
+    "productName": "OmniGene Studio",
+    "copyright": "Copyright © 2026 Asad Butt",
+
+    "directories": {
+      "output": "dist-package"
+    },
+
+    "files": [
+      "dist/**/*",
+      "main/**/*",
+      "public/**/*",
+      "package.json"
+    ],
+
+    "extraResources": [
+      {
+        "from": "dist-backend/backend_server.exe",
+        "to":   "dist-backend/backend_server.exe"
+      },
+      {
+        "from": "datasets",
+        "to":   "datasets"
+      },
+      {
+        "from": "backend/pathways.db",
+        "to":   "pathways.db"
+      },
+      {
+        "from": "backend/curated_overrides.json",
+        "to":   "curated_overrides.json"
+      },
+      {
+        "from": "backend/classifier_overrides.json",
+        "to":   "classifier_overrides.json"
+      }
+    ],
+
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "OmniGene-Studio-Setup-${version}.exe",
+      "verifyUpdateCodeSignature": false
+    },
+
+    "nsis": {
+      "oneClick":                      false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine":                    false,
+      "createDesktopShortcut":         true,
+      "createStartMenuShortcut":       true,
+      "shortcutName":                  "OmniGene Studio",
+      "installerIcon":                 "build/icon.ico",
+      "uninstallerIcon":               "build/icon.ico",
+      "installerHeaderIcon":           "build/icon.ico",
+      "deleteAppDataOnUninstall":      false,
+      "license":                       "build/license.txt",
+      "include":                       "build/installer.nsh"
+    },
+
+    "publish": null
+  }
+}

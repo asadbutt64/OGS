@@ -1,0 +1,37 @@
+{"timestamp": "2026-07-11T01:19:44.289126Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T01:19:44.289769Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T01:19:56.315595Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T01:19:56.316209Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T11:23:52.008264Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T11:23:52.008537Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T11:24:03.101935Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T11:24:03.102101Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T11:45:10.112567Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T11:45:10.113356Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T11:45:21.452686Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T11:45:21.452815Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T21:53:41.773262Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T21:53:41.773831Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T21:53:52.400276Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T21:53:52.400485Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T22:15:22.988964Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T22:15:22.989741Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T22:15:32.446695Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T22:15:32.446837Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T22:16:14.258027Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T22:16:14.258297Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T22:16:25.160070Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T22:16:25.160209Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T23:59:31.658283Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T23:59:31.658861Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-11T23:59:42.516484Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-11T23:59:42.516700Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-12T02:02:21.272076Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-12T02:02:21.272463Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-12T02:02:33.121158Z", "level": "WARNING", "message": "Gene THISGENEDOESNOTEXIST_XYZ999: no expression data found in any tier"}
+{"timestamp": "2026-07-12T02:02:33.121394Z", "level": "WARNING", "message": "Gene 'THISGENEDOESNOTEXIST_XYZ999' not found in any data tier \u2013 returning 404"}
+{"timestamp": "2026-07-18T20:15:24.268295Z", "level": "ERROR", "message": "GTEx API query failed for MTOR: The read operation timed out"}
+{"timestamp": "2026-07-18T20:15:24.272935Z", "level": "WARNING", "message": "Gene MTOR: no provenance-backed expression data found in any tier"}
+{"timestamp": "2026-07-18T20:21:58.678582Z", "level": "WARNING", "message": "Real Vina docking failed or was unavailable (RDKit is required for ligand 3D preparation. Install backend requirements first.) - falling back to Omnigene Docking Engine (ODE)..."}
+{"timestamp": "2026-07-18T21:53:39.008618Z", "level": "WARNING", "message": "Real Vina docking failed or was unavailable (RDKit is required for ligand 3D preparation. Install backend requirements first.) - falling back to Omnigene Docking Engine (ODE)..."}
+{"timestamp": "2026-07-18T23:38:59.092429Z", "level": "WARNING", "message": "Real Vina docking failed or was unavailable (RDKit is required for ligand 3D preparation. Install backend requirements first.) - falling back to Omnigene Docking Engine (ODE)..."}

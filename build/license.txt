@@ -1,0 +1,28 @@
+OmniGene Studio — Research Software License
+============================================
+
+Copyright (c) 2026 Asad Butt
+MPhil Biotechnology, University of Gujrat
+MSc Biomedical Sciences, University of Chester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use
+the Software for personal and academic research purposes, subject to the
+following conditions:
+
+1. The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+2. The Software may not be redistributed, sold, or sublicensed without the
+   express written permission of the copyright holder.
+
+3. Computational outputs (docking scores, kinetic simulations, CRISPR guide
+   sequences, deconvolution fractions) produced by the Software are
+   illustrative approximations and must not be used as the sole basis for
+   clinical, diagnostic, or therapeutic decisions.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE USE OF THIS SOFTWARE.

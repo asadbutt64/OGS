@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Custom thin scrollbars for studio grids */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(8, 11, 17, 0.5);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Glassmorphism Design Tokens */
+.glass-panel {
+  background: rgba(13, 19, 33, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.glass-input {
+  background: rgba(8, 11, 17, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #F8FAFC;
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.25);
+  outline: none;
+}
+
+/* Heatmap Organ Glowing Effect */
+.organ-path {
+  transition: fill 0.4s ease, filter 0.3s ease, stroke-width 0.2s ease;
+  cursor: pointer;
+}
+
+.organ-path:hover {
+  filter: drop-shadow(0 0 8px var(--glow-color, rgba(59, 130, 246, 0.6)));
+  stroke: rgba(255, 255, 255, 0.6);
+  stroke-width: 1.5px;
+}
+
+/* Glow Keyframe Animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+    border-color: rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.75);
+    border-color: rgba(59, 130, 246, 0.8);
+  }
+}
+
+.glow-active {
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+/* React Flow custom overrides for dark mode style */
+.react-flow__background {
+  background-color: #0b0f19 !important;
+}
+
+.react-flow__node {
+  border-radius: 8px !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  background: #3B82F6 !important;
+  border: 1.5px solid #080B11 !important;
+}
+
+.react-flow__edge-path {
+  stroke: rgba(255, 255, 255, 0.15) !important;
+  stroke-width: 2px !important;
+  transition: stroke 0.3s ease, stroke-width 0.3s ease;
+}
+
+.react-flow__edge.active .react-flow__edge-path {
+  stroke: #3B82F6 !important;
+  stroke-width: 3px !important;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: rgba(13, 19, 33, 0.9) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.react-flow__controls-button {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  fill: #94A3B8 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  fill: #F8FAFC !important;
+}
+
+/* Print Media Styles (Session Exporter Layout) */
+@media screen {
+  .print-report-container {
+    display: none !important;
+  }
+}
+
+@media print {
+  /* Reset height/overflow locks of Electron main container */
+  html, body, #root, #root > div {
+    height: auto !important;
+    overflow: visible !important;
+    background: white !important;
+    color: #0f172a !important;
+  }
+
+  /* Hide active dashboard panels during printing */
+  #root > div > *:not(.print-report-container) {
+    display: none !important;
+  }
+  
+  .print-report-container {
+    display: block !important;
+    position: relative !important;
+    width: 100%;
+    height: auto;
+    background: white !important;
+    color: #0f172a !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .page-break {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+}
