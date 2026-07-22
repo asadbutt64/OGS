@@ -1,3 +1,6 @@
+**IMPORTANT !!!!!****
+****DOWNLOAD FROM THE LATEST RELEASE SECTION ON THE RIGHT SIDE BAR WHICH IS IN WORKING CONDITION RIGHT NOW
+**
 # OmniGene Studio
 
 OmniGene Studio is an advanced desktop research workspace for spatial transcriptomics, molecular docking, and signaling cascade kinetic simulations. It translates raw genetic datasets, tissue expression levels, and structural records into interactive visual networks and physics-based models.
